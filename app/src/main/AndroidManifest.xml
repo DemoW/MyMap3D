@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gdut.water.mymap3d">
+
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于写入和读取缓存数据到扩展存储卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".base.MyMap"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <!-- 设置key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="ed37242f854823a4a2d966a0b03f2055" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".test.TestActivity" />
+        <!-- 位置检索功能的各个activity -->
+        <activity android:name=".locationsearch.module.PoiKeywordSearchActivity" />
+        <activity android:name=".locationsearch.module.PoiAroundSearchActivity" />
+        <activity android:name=".locationsearch.module.RoutePOIActivity" />
+        <activity android:name=".locationsearch.module.DistrictWithBoundaryActivity" />
+        <activity android:name=".locationsearch.module.CloudActivity" />
+        <activity android:name=".locationsearch.module.CloudDetailActivity" />
+        <activity android:name=".locationsearch.module.CalculateDistanceActivity" />
+        <activity android:name=".locationsearch.module.route.RouteActivity" />
+        <activity android:name=".locationsearch.module.route.DriveRouteDetailActivity" />
+        <activity android:name=".locationsearch.module.route.BusRouteDetailActivity" />
+        <activity android:name=".locationsearch.module.route.WalkRouteDetailActivity" />
+        <activity android:name=".locationsearch.module.HeatMapActivity"/>
+        <!-- 我的位置 功能的各个activity -->
+        <activity android:name=".base.LocationActivity" />
+        <activity
+            android:name=".mylocation.module.NewInputTipsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".mylocation.module.ShareActivity" />
+        <activity
+            android:name=".mylocation.module.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".mylocation.module.offlinemap.OfflineMapActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".mylocation.module.GlideActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mylocation.module.HistoryActivity"></activity>
+    </application>
+
+</manifest>

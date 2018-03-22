@@ -1,0 +1,220 @@
+<resources>
+    <string name="app_name">MyMap3D</string>
+    <string name="title_home">我的位置</string>
+    <string name="title_dashboard">位置检索</string>
+    <string name="title_notifications">更多功能</string>
+    <string name="action_settings">设置</string>
+
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="no_end_result">无下一页的相关数据！</string>
+
+    <string name="weather_live">实时</string>
+    <string name="weather_forecast">预报</string>
+    <string name="report_time">发布时间</string>
+    <string name="sydney">悉尼</string>
+    <string name="beijing">北京</string>
+
+    <string name="battery_saving">低功耗模式</string>
+    <string name="device_sensors">仅设备模式</string>
+    <string name="hight_accuracy">高精度模式</string>
+    <string name="interval">定位周期(ms)</string>
+    <string name="httpTimeout">网络超时(ms)</string>
+    <string name="location_once">单次定位</string>
+    <string name="needAddress">逆地理编码</string>
+    <string name="cacheAble">开启缓存</string>
+    <string name="onceLastest">提高首次定位精度</string>
+    <string name="gpsFirst">GPS优先</string>
+    <string name="useSensor">使用传感器</string>
+    <string name="wifiScan">开启wifi扫描</string>
+    <string name="startLocation">开始定位</string>
+    <string name="stopLocation">停止定位</string>
+    <string name="defaultInteval">2000</string>
+    <string name="defaultHttpTimeout">30000</string>
+
+    <string name="cloud_id_search">ID搜索</string>
+    <string name="cloud_arround_search">周边搜索</string>
+    <string name="cloud_polygon_search">多边形搜索</string>
+    <string name="cloud_local_search">本地搜索</string>
+    <string name="cloud_base_field">基本字段</string>
+    <string name="cloud_id">POI ID(_id)</string>
+    <string name="cloud_item_name">名称(_name)</string>
+    <string name="cloud_latlon">经纬度(_location)</string>
+    <string name="cloud_address">地址(_address)</string>
+    <string name="cloud_item_createtime">创建时间(_createtime)</string>
+    <string name="cloud_item_updatetime">更新时间(_updatetime)</string>
+    <string name="cloud_item_distance">距Center距离(_distance)</string>
+    <string name="cloud_item_identify">自定义字段</string>
+
+    <string name="province">省</string>
+    <string name="city">市</string>
+    <string name="district">区/县</string>
+    <string name="all_offline">所有城市</string>
+    <string name="download_offline">下载管理</string>
+    <string name="city_name">城市名称</string>
+    <string name="city_size">城市大小</string>
+    <string name="download_progress">0%</string>
+    <string name="my_city">当前城市</string>
+    <string name="district_demo">行政区划查询</string>
+    <string name="district_description">政区划查询功能演示</string>
+    <string name="district_boundary_demo">行政区划边界查询</string>
+    <string name="district_boundary_description">政区划查询功能返回边界演示</string>
+    <string name="search_title">搜索关键字</string>
+
+    <string name="location_share">位置分享</string>
+    <string name="route_share">路径规划分享</string>
+    <string name="poi_share">POI分享</string>
+    <string name="navi_share">导航分享</string>
+    <string name="map_screenshot">地图截屏</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_settings">参数设置</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">地图通用设置</string>
+
+    <string-array name="pref_title_map_type">
+        <item>白昼地图</item>
+        <item>卫星图</item>
+        <item>夜景图</item>
+    </string-array>
+    <string-array name="pref_values_map_type">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="pref_title_map_logo">
+        <item>地图左下角</item>
+        <item>地图底部居中</item>
+        <item>地图右下角</item>
+    </string-array>
+    <string-array name="pref_values_map_logo">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">Water</string>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_route_data_sync">路径规划参数设置</string>
+
+    <string name="pref_title_bus_mode">公交路径规划策略</string>
+    <string-array name="pref_sync_bus_mode_titles">
+        <item>最快捷</item>
+        <item>费用优先</item>
+        <item>最少换乘</item>
+        <item>最少步行</item>
+        <item>最舒适</item>
+        <item>不乘地铁</item>
+    </string-array>
+    <string-array name="pref_sync_bus_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string name="pref_title_driving_mode">驾车路径规划策略</string>
+    <string-array name="pref_sync_driving_mode_titles">
+        <item>速度优先</item>
+        <item>费用优先</item>
+        <item>距离优先</item>
+        <item>不走高速</item>
+        <item>避免拥堵</item>
+        <item>不走高速且避免收费</item>
+        <item>不走高速且躲避拥堵</item>
+        <item>躲避收费和拥堵</item>
+        <item>不走高速躲避收费和拥堵</item>
+    </string-array>
+    <string-array name="pref_sync_driving_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <!-- 地理信息更新-->
+    <string name="pref_header_gis_update">地理信息更新</string>
+    <string name="pref_gis_cloud_id">云图ID</string>
+    <string-array name="pref_cloud_id_titles">
+        <item>GOGO新天地</item>
+        <item>瀛洲生态公园</item>
+        <item>广东海珠国家湿地公园</item>
+        <item>广州番禺长隆野生动物世界</item>
+        <item>大夫山森林公园</item>
+        <item>岭南印象园</item>
+        <item>黄埔军校旧址纪念馆</item>
+        <item>广东工业大学(大学城校区)</item>
+
+    </string-array>
+    <string-array name="pref_cloud_id_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>19</item>
+    </string-array>
+
+    <string name="pref_gis_cloud_keyword">云图关键字</string>
+    <string-array name="pref_cloud_keyword_titles">
+        <item>全部</item>
+        <item>景点</item>
+        <item>教育</item>
+        <item>交通</item>
+        <item>医院</item>
+        <item>银行</item>
+        <item>公司</item>
+        <item>地名</item>
+        <item>购物</item>
+        <item>体育</item>
+    </string-array>
+
+    <string-array name="pref_cloud_keyword_values">
+        <item> </item>
+        <item>景点</item>
+        <item>教育</item>
+        <item>交通</item>
+        <item>医院</item>
+        <item>银行</item>
+        <item>公司</item>
+        <item>地名</item>
+        <item>购物</item>
+        <item>体育</item>
+    </string-array>
+    <string name="pref_gis_cloud_bound">周边检索的范围</string>
+    <string-array name="pref_cloud_bound_titles">
+        <item>4000米</item>
+        <item>5000米</item>
+        <item>6000米</item>
+        <item>7000米</item>
+    </string-array>
+    <string-array name="pref_bound_values">
+        <item>4000</item>
+        <item>5000</item>
+        <item>6000</item>
+        <item>7000</item>
+    </string-array>
+
+</resources>

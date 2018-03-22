@@ -1,0 +1,52 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <PreferenceCategory android:title="全局配置选项开关">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="MapTypeToAll"
+            android:title="全局应用地图基础配置"
+            android:summaryOn="全局应用基础配置打开"
+            android:summaryOff="全局应用基础配置关闭" />
+    </PreferenceCategory>
+
+   <PreferenceCategory android:title="地图基础配置">
+       <ListPreference
+           android:defaultValue="1"
+           android:title="地图类型"
+           android:key="MapType"
+           android:entries="@array/pref_title_map_type"
+           android:entryValues="@array/pref_values_map_type"/>
+
+       <ListPreference
+           android:defaultValue="1"
+           android:title="Logo位置"
+           android:key="MapLogo"
+           android:entries="@array/pref_title_map_logo"
+           android:entryValues="@array/pref_values_map_logo"/>
+
+       <SwitchPreference
+           android:defaultValue="false"
+           android:key="MapScale"
+           android:summaryOn="比例尺可用"
+           android:summaryOff="比例尺不可用"
+           android:title="地图比例尺" />
+
+       <SwitchPreference
+           android:defaultValue="false"
+           android:key="MapGestures"
+           android:summaryOn="手势可用"
+           android:summaryOff="手势不可用"
+           android:title="地图手势"/>
+
+       <SwitchPreference
+           android:defaultValue="false"
+           android:key="MapIndoor"
+           android:title="室内地图"
+           android:summaryOn="室内地图可用"
+           android:summaryOff="室内地图不可用" />
+
+   </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/get_all_data"
+        android:orderInCategory="100"
+        android:title="全部历史记录"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/get_week_data"
+        android:orderInCategory="100"
+        android:title="最近一周记录"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/delete"
+        android:orderInCategory="100"
+        android:title="清空历史记录"
+        app:showAsAction="never" />
+</menu>

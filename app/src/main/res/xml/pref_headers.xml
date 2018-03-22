@@ -1,0 +1,19 @@
+<preference-headers
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- These settings headers are only used on tablets. -->
+    <header
+        android:fragment="com.gdut.water.mymap3d.mylocation.module.SettingsActivity$GeneralPreferenceFragment"
+        android:icon="@drawable/ic_general_set_black_24dp"
+        android:title="@string/pref_header_general" />
+
+    <header
+        android:fragment="com.gdut.water.mymap3d.mylocation.module.SettingsActivity$GISUpdatePreferenceFragment"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="@string/pref_header_gis_update" />
+
+    <header
+        android:fragment="com.gdut.water.mymap3d.mylocation.module.SettingsActivity$DataSyncPreferenceFragment"
+        android:icon="@drawable/ic_traffic_route_24dp"
+        android:title="@string/pref_header_route_data_sync" />
+
+</preference-headers>

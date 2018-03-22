@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory android:title="路径规划参数设置">
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_sync_bus_mode_titles"
+        android:entryValues="@array/pref_sync_bus_mode_values"
+        android:key="BusMode"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_bus_mode" />
+
+    <ListPreference
+        android:defaultValue="8"
+        android:entries="@array/pref_sync_driving_mode_titles"
+        android:entryValues="@array/pref_sync_driving_mode_values"
+        android:key="DrivingMode"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_driving_mode" />
+
+    <!-- This preference simply launches an intent when selected. Use this UI sparingly, per
+         design guidelines. -->
+
+    <!--<Preference android:title="@string/pref_title_system_sync_settings">-->
+        <!--<intent android:action="android.settings.SYNC_SETTINGS" />-->
+    <!--</Preference>-->
+</PreferenceCategory>
+</PreferenceScreen>
